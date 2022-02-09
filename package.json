@@ -1,0 +1,19 @@
+{
+  "name": "food-password-this-time",
+  "version": "1.0.0",
+  "description": "try to guess!",
+  "main": "index.js",
+  "module": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "food": "^0.3.5",
+    "got": "^12.0.1",
+    "input": "^1.0.1"
+  }
+}
