@@ -17,11 +17,14 @@ async function github(username, callback) {
   }
 }
 function main() {
-  github("dshaney", (error, projects) => {
-      for ( let project of projects){
-
+  github("oppoishd", (error, projects) => {
+      if (error != undefined) {
+          console.log(error.message);
+          return
+        };
+          for ( let project of projects){
     console.log(`${project.name}, has ${project.description}, has ${project.stargazers_count}`);
-      }
+        }
   });
 }
 
